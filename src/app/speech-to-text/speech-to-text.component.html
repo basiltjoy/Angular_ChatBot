@@ -64,8 +64,8 @@
                 </div>
             </div>
 
-            <div class="column">&nbsp;</div>
-            <div class="input-group input-group-sm mb-3 footer" *ngIf="!showOverlay">
+            
+            <div class="input-group input-group-sm mb-3 footer" style="position: fixed;">
                 <button class="btn btn-info" (click)="toggleRecording()">
                     {{ isRecording ? 'Stop Recording' : 'Start Recording' }}
                 </button>
