@@ -12,6 +12,7 @@ export class SidebarComponent {
   screenSize: boolean = false;
   showMore: boolean = false;
   @Output() listenerEvntSidebar = new EventEmitter<string>();
+  
   constructor() {
     this.updateScreenSize();
   }

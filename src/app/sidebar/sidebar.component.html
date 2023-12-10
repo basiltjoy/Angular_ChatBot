@@ -3,7 +3,7 @@
         <ul *ngIf="data.length != 0; else noMessagesTooltip">
             <li *ngFor="let message of data, let i = index">
                 <div class="message text-white border-bottom border-white text-message"
-                    *ngIf="message.author === 'user'">
+                    *ngIf="message.author === 'user'" style="cursor: default">
                     <i class="fa-solid fa-user fa-Userhisory  mx-2 mt-2"></i>
                     {{ message.content }}
                 </div>
@@ -29,7 +29,8 @@
                 </div>
                 <div *ngIf="showMore">
                     <li *ngFor="let message of data, let i = index" class="list-group-item">
-                        <div class="message border-bottom border-white text-message mx-3" *ngIf="message.author === 'user'">
+                        <div class="message border-bottom border-white text-message mx-3" *ngIf="message.author === 'user'"
+                        style="cursor: default;">
                             <i class="fa-solid fa-user fa-Userhisory  mx-3 mt-2"></i>
                             {{ message.content }}
                         </div>

@@ -35,7 +35,7 @@
                                             <i class="fa-solid fa-user fa-xl mx-2"></i>
                                             <span class="mt-2"> {{ message.content }}</span>
                                         </div>
-                                        <div class=" text-end" *ngIf="message.author === 'bot'">
+                                        <div class=" text-end" *ngIf="message.author === 'bot'" style="cursor: default">
                                             <i class="fa-brands fa-android fa-beat fa-xl"></i>&nbsp;
                                             {{ message.content }}
                                             <div class="chat__time">{{message.date | date:'medium'}}</div>
