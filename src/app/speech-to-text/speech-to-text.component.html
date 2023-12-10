@@ -70,7 +70,7 @@
                     {{ isRecording ? 'Stop Recording' : 'Start Recording' }}
                 </button>
                 <input [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text" class="form-control"
-                    [placeholder]="placeholder" aria-describedby="button-addon2">
+                    [placeholder]="placeholder" aria-describedby="button-addon2" [disabled]="isRecording">
                 <button (click)="sendMessage()" class="btn btn-outline-primary" type="button"
                     id="button-addon2">Send</button>
             </div>
